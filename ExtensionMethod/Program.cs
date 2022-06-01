@@ -23,5 +23,6 @@ namespace ExtensionMethod
             Console.WriteLine("El resultado es : " +dividir.Dividir(modelo));
             Console.ReadLine();
         }
+        
     }
 }
