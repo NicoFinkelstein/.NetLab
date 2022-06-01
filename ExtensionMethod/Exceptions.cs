@@ -10,7 +10,23 @@ namespace ExtensionMethod
     {
         public static void ThrowException()
         {
+            try
+            {
 
+            }
+            catch (DivideByZeroException ex)
+            {
+                throw ex;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+               
+              
+            
         }
+
     }
+    
 }

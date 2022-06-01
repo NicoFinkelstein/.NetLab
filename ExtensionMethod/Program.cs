@@ -20,9 +20,15 @@ namespace ExtensionMethod
             modelo.NumberA = int.Parse(Console.ReadLine());
             Console.WriteLine("Cargue el divisor (numero por el cual quiere que se divida");
             modelo.NumberB = int.Parse(Console.ReadLine());
-            Console.WriteLine("El resultado es : " +dividir.Dividir(modelo));
+            Console.WriteLine("El resultado es : " + dividir.Dividir(modelo));
             Console.ReadLine();
         }
+
+     
+
+       
+           
+
         
     }
 }
