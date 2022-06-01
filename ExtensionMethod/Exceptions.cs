@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ExtensionMethod
 {
-    public class Exceptions
+    public class Exceptions 
     {
         public static void ThrowException()
         {
             try
             {
-
+             
             }
             catch (DivideByZeroException ex)
             {
