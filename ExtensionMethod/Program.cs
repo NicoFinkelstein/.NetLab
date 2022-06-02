@@ -26,7 +26,11 @@ namespace ExtensionMethod
                 Console.WriteLine("No se ha introducido un valor numerico valido");
                 Console.WriteLine(ex.Message);
             }
-            
+            finally
+            {
+                Console.WriteLine("-------------------------------");
+                Console.WriteLine("Programa finalizado");
+            }
 
             Console.ReadLine();
 

@@ -44,7 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DivisionMachine.cs" />
-    <Compile Include="Exceptions\Exceptions.cs" />
     <Compile Include="NumberModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
