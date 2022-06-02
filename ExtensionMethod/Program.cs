@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ExtensionMethod
 {
@@ -18,18 +14,36 @@ namespace ExtensionMethod
             NumberModel modelo = new NumberModel();
             Console.WriteLine("Cargue el dividendo (numero que quiere que se divida)");
             modelo.NumberA = int.Parse(Console.ReadLine());
-            Console.WriteLine("Cargue el divisor (numero por el cual quiere que se divida");
+            Console.WriteLine("Cargue el divisor (numero por el cual quiere que se divida)");
             modelo.NumberB = int.Parse(Console.ReadLine());
             Console.WriteLine("El resultado es : " + dividir.Dividir(modelo));
             Console.ReadLine();
+           
+            try
+            {
+                modelo.NumberB = int.Parse(Console.ReadLine());
+            }
+            catch(FormatException ex)
+            {
+                Console.WriteLine("No se ha introducido un valor numerico valido");
+                Console.WriteLine(ex.Message);
+            }
+
+            catch(DivideByZeroException ex)
+            {
+                Console.WriteLine("No se puede dividir por 0");
+            }
+            
+
+
         }
 
-        
-     
 
-       
-           
 
-        
+
+
+
+
+
     }
 }
