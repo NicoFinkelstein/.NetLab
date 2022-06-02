@@ -21,14 +21,20 @@ namespace ExtensionMethod
                 modelo.NumberB = int.Parse(Console.ReadLine());
                 Console.WriteLine("El resultado es : " + dividir.Dividir(modelo));
             }
-            catch(Exception ex)
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine("Solo Chuck Norris divide por 0!!");
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine("No se ha introducido un valor numerico valido");
                 Console.WriteLine(ex.Message);
             }
+           
             finally
             {
-                Console.WriteLine("-------------------------------");
+                Console.WriteLine("-------------------------------***********------------------------------");
                 Console.WriteLine("Programa finalizado");
             }
 
