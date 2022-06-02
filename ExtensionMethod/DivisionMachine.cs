@@ -11,9 +11,7 @@ namespace ExtensionMethod
         public int Dividir(NumberModel modelo)
         {
             return modelo.NumberA / modelo.NumberB;
-           
         }
-
-        
     }
+
 }
