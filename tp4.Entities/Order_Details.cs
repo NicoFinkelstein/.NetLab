@@ -9,6 +9,8 @@ namespace tp4.Entities
     [Table("Order Details")]
     public partial class Order_Details
     {
+        public object Order_DetailsName;
+
         [Key]
         [Column(Order = 0)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
