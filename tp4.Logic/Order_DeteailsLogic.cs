@@ -10,6 +10,7 @@ namespace tp4.Logic
 {
     public class Order_DeteailsLogic : BaseLogic    
     {
+        private readonly NorthwindContext context;
         
         public List<Order_Details> GetAll()
         {

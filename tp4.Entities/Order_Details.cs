@@ -7,7 +7,7 @@ namespace tp4.Entities
     using System.Data.Entity.Spatial;
 
     [Table("Order Details")]
-    public partial class Order_Details
+    public class Order_Details
     {
         public object Order_DetailsName;
 

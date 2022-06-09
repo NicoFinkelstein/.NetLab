@@ -7,12 +7,11 @@ using tp4.Entities;
 namespace tp4.Data
 
 {
-    public partial class NorthwindContext : DbContext
+    public class NorthwindContext : DbContext
     {
         public NorthwindContext()
             : base("name=NorthwindConnection")
         {
-            
         }
 
         public virtual DbSet<Order_Details> Order_Details { get; set; }

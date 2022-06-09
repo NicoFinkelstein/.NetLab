@@ -10,7 +10,7 @@ namespace tp4.Logic
 {
     public class ShippersLogic : BaseLogic  
     {
-        
+        private readonly NorthwindContext context;
         public List<Shippers> GetAll()
         {
             return context.Shippers.ToList();

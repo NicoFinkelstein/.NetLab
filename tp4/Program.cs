@@ -21,18 +21,20 @@ namespace tp4
             {
                 Console.WriteLine($"{order_Details.Order_DetailsName} - {order_Details.UnitPrice}");
             }
+            Console.WriteLine("*********************************");
             Console.ReadLine();
 
-            {
+            
                 ShippersLogic shippersLogic = new ShippersLogic();
 
 
                foreach (Shippers order_Details in new ShippersLogic().GetAll())
-            {
+                 {
                     Console.WriteLine($"{shippers.ShippersName} - {shippers.UnitPrice}");
-                }
-                Console.ReadLine();
+                
             }
+                Console.ReadLine();
+            
 
         }
 
