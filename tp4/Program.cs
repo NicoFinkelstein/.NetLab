@@ -29,7 +29,7 @@ namespace tp4
 
                foreach (Shippers order_Details in new ShippersLogic().GetAll())
             {
-                    Console.WriteLine( $"{shippers.ShippersName} - {shippers.UnitPrice}");
+                    Console.WriteLine($"{shippers.ShippersName} - {shippers.UnitPrice}");
                 }
                 Console.ReadLine();
             }

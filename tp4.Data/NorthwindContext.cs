@@ -12,6 +12,7 @@ namespace tp4.Data
         public NorthwindContext()
             : base("name=NorthwindConnection")
         {
+            
         }
 
         public virtual DbSet<Order_Details> Order_Details { get; set; }

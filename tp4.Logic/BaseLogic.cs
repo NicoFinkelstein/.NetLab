@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using tp4.Data;
-using tp4.Entities;
 
 namespace tp4.Logic
 {
-    public class Order_DeteailsLogic : BaseLogic    
+    public class BaseLogic
     {
+        private readonly NorthwindContext context;
         
-        public List<Order_Details> GetAll()
+        public BaseLogic()
         {
-            return context.Order_Details.ToList();
+            context = new NorthwindContext();
         }
     }
 }

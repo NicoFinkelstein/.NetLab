@@ -6,10 +6,20 @@ namespace tp4.Entities
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Shippers
+    [Table("Shippers")]
+
+    public  class Shippers
     {
+        public object ShippersName;
         [Key]
+        [Column(Order = 0)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+
+    
         public int ShipperID { get; set; }
+        [Key]
+        [Column(Order = 1)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
 
         [Required]
         [StringLength(40)]

@@ -8,17 +8,19 @@ using tp4.Entities;
 
 namespace tp4.Logic
 {
-    public class ShippersLogic
+    public class ShippersLogic : BaseLogic  
     {
-        private readonly NorthwindContext context;
-
-        public ShippersLogic()
-        {
-            context = new NorthwindContext();
-        }
+        
         public List<Shippers> GetAll()
         {
             return context.Shippers.ToList();
+        }
+
+        public void Add(Shippers newShippers)
+        {
+            context.Shippers.Add(newShippers);
+
+            context.SaveChanges();
         }
     }
 }
