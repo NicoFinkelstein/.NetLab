@@ -2,8 +2,10 @@ using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
+using tp4.Entities;
 
 namespace tp4.Data
+
 {
     public partial class NorthwindContext : DbContext
     {
