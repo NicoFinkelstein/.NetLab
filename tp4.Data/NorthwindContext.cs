@@ -5,9 +5,9 @@ using System.Linq;
 
 namespace tp4.Data
 {
-    public partial class Model1 : DbContext
+    public partial class NorthwindContext : DbContext
     {
-        public Model1()
+        public NorthwindContext()
             : base("name=NorthwindConnection")
         {
         }
