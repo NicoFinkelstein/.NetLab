@@ -48,11 +48,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Order_DeteailsLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShippersLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\tp4.Data\tp4.Data.csproj">
+      <Project>{5C0C51BF-E40B-4826-8ECE-BEB2AF7ACEFD}</Project>
+      <Name>tp4.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\tp4.Entities\tp4.Entities.csproj">
+      <Project>{2D9954EA-0D28-4B94-B0BE-EB1B72BF2583}</Project>
+      <Name>tp4.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

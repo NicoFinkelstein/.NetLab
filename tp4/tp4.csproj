@@ -50,12 +50,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Order_DetailsLogic.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\tp4.Data\tp4.Data.csproj">
+      <Project>{5c0c51bf-e40b-4826-8ece-beb2af7acefd}</Project>
+      <Name>tp4.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\tp4.Entities\tp4.Entities.csproj">
+      <Project>{2d9954ea-0d28-4b94-b0be-eb1b72bf2583}</Project>
+      <Name>tp4.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\tp4.Logic\tp4.Logic.csproj">
+      <Project>{FFB0465D-5806-4339-9F4B-644C119CDD68}</Project>
+      <Name>tp4.Logic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
