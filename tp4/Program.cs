@@ -30,9 +30,29 @@ namespace tp4
 
                foreach (Shippers shippers in new ShippersLogic().GetAll())
                  {
-                    Console.WriteLine($"{shippers.ShippersName} - {shippers.CompanyName}");
+                Console.WriteLine($"{shippers.ShippersName} - {shippers.CompanyName}");
                 
             }
+
+            ShippersLogic shippersLogic1 = new ShippersLogic();
+
+            foreach (var item in shippersLogic1.GetAll())
+            {
+                Console.WriteLine($"{item.ShipperID} - {item.CompanyName}");
+            }
+
+            shippersLogic.Add(new Shippers
+            {
+                ShipperID = 55,
+                CompanyName = "FINKELSTEIN LDT"
+
+            });
+            Console.WriteLine();
+
+            shippersLogic.Delete(55);
+
+            Console.WriteLine("Shipper eliminado");
+
                 Console.ReadLine();
             
 

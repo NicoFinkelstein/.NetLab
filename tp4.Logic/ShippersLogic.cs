@@ -11,14 +11,28 @@ namespace tp4.Logic
     public class ShippersLogic : BaseLogic  
     {
         private readonly NorthwindContext context;
+
+        public ShippersLogic()
+        {
+            context = new NorthwindContext();
+        }
         public List<Shippers> GetAll()
         {
             return context.Shippers.ToList();
         }
 
-        public void Add(Shippers newShippers)
+        public void Add(Shippers newShipper)
         {
-            context.Shippers.Add(newShippers);
+            context.Shippers.Add(newShipper);
+            context.SaveChanges();
+
+        }
+
+        public void Delete(int id)
+        { 
+            var ShipperAEliminar = context.Shippers.First(s => s.ShipperID == id);
+            
+            context.Shippers.Remove(ShipperAEliminar);
 
             context.SaveChanges();
         }

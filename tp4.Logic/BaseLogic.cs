@@ -7,9 +7,9 @@ using tp4.Data;
 
 namespace tp4.Logic
 {
-    public class BaseLogic
+    public class BaseLogic 
     {
-        private readonly NorthwindContext context;
+        protected readonly NorthwindContext context;
         
         public BaseLogic()
         {
