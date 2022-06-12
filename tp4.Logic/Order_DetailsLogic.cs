@@ -8,9 +8,14 @@ using tp4.Entities;
 
 namespace tp4.Logic
 {
-    public class Order_DeteailsLogic : BaseLogic    
+    public class Order_DetailsLogic : BaseLogic    
     {
         private readonly NorthwindContext context;
+
+        public Order_DetailsLogic()
+        {
+            context = new NorthwindContext();   
+        }
         
         public List<Order_Details> GetAll()
         {

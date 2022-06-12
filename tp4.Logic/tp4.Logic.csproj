@@ -52,8 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseLogic.cs" />
-    <Compile Include="NorthwindContext.cs" />
-    <Compile Include="Order_DeteailsLogic.cs" />
+    <Compile Include="Order_DetailsLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShippersLogic.cs" />
   </ItemGroup>

@@ -19,18 +19,18 @@ namespace tp4
 
             foreach (Order_Details order_Details in new Order_DetailsLogic().GetAll())
             {
-                Console.WriteLine($"{order_Details.Order_DetailsName} - {order_Details.UnitPrice}");
+                Console.WriteLine($"{order_Details.Order_DetailsName} - {order_Details.OrderID} - {order_Details.UnitPrice} - {order_Details.Quantity} - {order_Details.Discount}");
             }
-            Console.WriteLine("*********************************");
+
             Console.ReadLine();
 
             
                 ShippersLogic shippersLogic = new ShippersLogic();
 
 
-               foreach (Shippers order_Details in new ShippersLogic().GetAll())
+               foreach (Shippers shippers in new ShippersLogic().GetAll())
                  {
-                    Console.WriteLine($"{shippers.ShippersName} - {shippers.UnitPrice}");
+                    Console.WriteLine($"{shippers.ShippersName} - {shippers.CompanyName}");
                 
             }
                 Console.ReadLine();
