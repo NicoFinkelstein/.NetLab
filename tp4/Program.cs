@@ -53,7 +53,14 @@ namespace tp4
 
             Console.WriteLine("Shipper eliminado");
 
-                Console.ReadLine();
+
+            shippersLogic.Update(new Shippers
+            {
+                ShippersName = "Nuevo Nombre",
+                ShipperID = 55,
+            });
+                
+            Console.ReadLine();
             
 
         }

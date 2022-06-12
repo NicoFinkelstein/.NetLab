@@ -10,7 +10,7 @@ namespace tp4.Logic
 {
     public class ShippersLogic : BaseLogic  
     {
-        private readonly NorthwindContext context;
+        private new readonly NorthwindContext context;
 
         public ShippersLogic()
         {
@@ -33,6 +33,15 @@ namespace tp4.Logic
             var ShipperAEliminar = context.Shippers.First(s => s.ShipperID == id);
             
             context.Shippers.Remove(ShipperAEliminar);
+
+            context.SaveChanges();
+        }
+
+        public void Update(Shippers shippers)
+        {
+            var ShippersUpdate = context.Shippers.Find(shippers.ShipperID);
+
+            ShippersUpdate.ShippersName = shippers.ShippersName;
 
             context.SaveChanges();
         }
