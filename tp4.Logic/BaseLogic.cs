@@ -14,6 +14,7 @@ namespace tp4.Logic
         public BaseLogic()
         {
             context = new NorthwindContext();
+            context.SaveChanges();
         }
     }
 }
