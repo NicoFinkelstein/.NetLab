@@ -14,6 +14,11 @@ namespace tp4
 
         static void Main(string[] args)
         {
+            if (args is null)
+            {
+                throw new ArgumentNullException(nameof(args));
+            }
+
             Console.WriteLine("***MENU DE OPCIONES***");
             Console.WriteLine();
             Console.WriteLine("1. Mostrar todos los datos de Order Details");
@@ -53,7 +58,7 @@ namespace tp4
                         Console.WriteLine($"{shippers.ShippersName} - {shippers.CompanyName}");
 
                     }
-                    input = Console.ReadLine();
+                 
                     Console.Clear();
                     break;
                
@@ -65,7 +70,7 @@ namespace tp4
                     {
                         Console.WriteLine($"{item.ShipperID} - {item.CompanyName}");
                     }
-                    input = Console.ReadLine();
+                  
                     Console.Clear();
                     break;
 
@@ -78,7 +83,7 @@ namespace tp4
 
                     });
                     Console.WriteLine();
-                    input = Console.ReadLine();
+                 
                     Console.Clear();
                     break;
                
@@ -87,7 +92,7 @@ namespace tp4
                     shippersLogic.Delete(55);
 
                     Console.WriteLine("Shipper eliminado");
-                    input = Console.ReadLine();
+                   
                     Console.Clear();
                     break;
 
@@ -100,7 +105,7 @@ namespace tp4
                     });
 
                     Console.ReadLine();
-                    input = Console.ReadLine();
+                   
                     Console.Clear();
                     break;
 
